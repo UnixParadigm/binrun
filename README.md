@@ -33,5 +33,7 @@ Please make sure `chmod` and `termux-elf-cleaner` is installed for this to work 
 # why the fork tho?
 
 i just wanted to emove cwd "requirement"
+
 good for when you wanna `binrun "$(command -v binary)"` and have it work :)
+
 otherwise i was just gonna `binrun "../../../../../../../../../../../$(command -v binary)"` which is sad and sux
