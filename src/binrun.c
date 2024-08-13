@@ -17,8 +17,6 @@ int main(int argc, char** argv)
 
 //check if the file exists
 	char file[128] = {0};
-	strcat(file, cwd);
-	strcat(file, "/");
 	strcat(file, argv[1]);
 	if(!(access(file, F_OK) == 0)) {
 		printf("binrun: \x1B[31merror: \x1B[0mfile: %s not found\n", file);
@@ -42,8 +40,6 @@ int main(int argc, char** argv)
 	resetstring(command, cmd_len);
 
 	strcat(command, "cp ");
-	strcat(command, cwd);
-	strcat(command, "/");
 	strcat(command, argv[1]);
 	strcat(command, " /data/data/com.termux/files/home/.binrun/executable");
 
