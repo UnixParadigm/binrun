@@ -18,7 +18,7 @@ binrun <path/to/executable> <arguments to pass ...>
 cmake, C compiler and toolchain(llvm recommended)
 
 ```
-git clone https://github.com/GyanPrakash2483/binrun.git
+git clone https://github.com/UnixParadigm/binrun.git
 cd binrun
 mkdir build && cd build
 cmake ..
